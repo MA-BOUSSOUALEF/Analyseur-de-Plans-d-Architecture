@@ -373,10 +373,11 @@ Organisez votre réponse de manière claire avec des titres et sous-titres.
                             base_prompt += f"\n\n**Instructions supplémentaires :** {custom_prompt}"
 
                         st.write("📌 Étape 3: Conversion de l'image en bytes")
-                        image_bytes = image_to_bytes(image)
+                        
 
                         st.write("📌 Étape 4: Appel au modèle Gemini")
-                        response = model.generate_content([base_prompt, image_bytes])
+                        response = model.generate_content([base_prompt, image])
+
                         st.write("📌 Étape 5: Réponse reçue du modèle")
 
                         st.session_state.analysis_result = response.text
