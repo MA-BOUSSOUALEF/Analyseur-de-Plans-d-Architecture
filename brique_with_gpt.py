@@ -181,7 +181,7 @@ Format JSON attendu :
 # --- Streamlit ---
 def main():
     st.set_page_config(page_title="Analyse de Plan", layout="wide")
-    st.title("🏗️ Analyse de Plans Architecturaux avec GPT")
+    st.title("🏗️ Analyse de Plans Architecturaux avec La Bonne Réponse")
 
     if not check_api_configuration():
         return
